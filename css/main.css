@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background-color: #1060CB;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+header .logo {
+  font-weight: bold;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.social-container, .heroDesign {
+  display: none;
+}
+
+.hero {
+  background: #1968D1;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.meet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 200px;
+  font-weight: bold;
+  color: black;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.featured {
+  position: relative;
+}
+
+.featured .appImage {
+  border-radius: 1em;
+}
+
+.featureSubtitle {
+  font-weight: bold;
+  color: #397DD7;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.featureTitle {
+  color: #37547C;
+  margin-top: -.6em;
+  display: block;
+}
+
+.featureDescription {
+  margin-bottom: 3em;
+  font-size: .85em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.skills {
+  background: #3165AA;
+}
+
+.skills-container ul li {
+  background-color: white;
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.skills-container ul li .icon-container {
+  display: -ms-grid;
+  display: grid;
+  height: 100px;
+  place-content: center;
+  margin: 0 auto;
+}
+
+.skills-container ul li .icon-container.1 {
+  width: 50px;
+}
+
+.skills-container ul li .icon-container.2 {
+  width: 100px;
+}
+
+.skills-container ul li .icon-container.3 {
+  width: 60px;
+}
+
+.skills-container ul li .icon-container .skill-title {
+  font-weight: bold;
+}
+
+.skills-container ul li .icon-container .skill-discription {
+  font-weight: lighter;
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+  .featured {
+    text-align: left;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+  }
+  .left {
+    place-content: center;
+    display: -ms-grid;
+    display: grid;
+  }
+  .appImage {
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+  .skills {
+    margin-top: -6em;
+    margin-bottom: -7em;
+    padding-top: 7em;
+  }
+  .skills-container ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+  }
+  .nav-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70% auto;
+        grid-template-columns: 70% auto;
+    background: unset;
+  }
+  .nav-container header {
+    background: #1060cb;
+  }
+  header {
+    padding: 2em 2em 2em 4em;
+  }
+  .social-container {
+    padding: 2em 0em 2em 10em;
+  }
+  section {
+    padding: 4em;
+  }
+  .social-container {
+    display: block;
+  }
+  .social-container ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+  }
+  .social-container ul img {
+    width: 20px;
+  }
+  .hero {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70% auto;
+        grid-template-columns: 70% auto;
+    background: unset;
+    padding: 0;
+  }
+  .hero .content {
+    background: #1968D1;
+    padding: 6em 8em 6em 4em;
+    text-align: left;
+  }
+  .hero .content h1 {
+    font-size: 4em;
+    line-height: 1.2em;
+  }
+  .meet {
+    margin: unset;
+  }
+  .heroDesign {
+    display: unset;
+    margin-left: -51%;
+    margin-top: 35%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  header {
+    padding: 2em 2em 2em 10em;
+  }
+  .social-container {
+    padding: 2em 0em 2em 10em;
+  }
+  section {
+    padding: 10em 10em 4em 10em;
+  }
+  .hero .content {
+    padding: 6em 8em 6em 10em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
